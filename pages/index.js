@@ -1,16 +1,19 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 
+import { Card } from 'antd';
+
 export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>Support App</title>
       </Head>
 
       <main className={styles.main}>
         <h1 className={styles.title}>Support</h1>
 
+        <Card> Card</Card>
         <div className={styles.grid}>
           <a href="#apps" className={styles.card}>
             <h3>Apps &rarr;</h3>
