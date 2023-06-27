@@ -8,12 +8,13 @@ import { ProForm, ProFormText } from '@ant-design/pro-components';
 let ProPage = (data) => {
   return (
     <ProForm
+      onInit={async (data) => console.log(data)}
       onFinish={async (values) => {
         console.log(values);
         // await fetch()
       }}
     >
-      <ProFormText name="name" label="tpa" />
+      <ProFormText name="name" label="User" />
     </ProForm>
   );
 };
